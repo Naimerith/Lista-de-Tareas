@@ -29,11 +29,33 @@ h1{
 
 .contenedorPrincipal{
   width: 600px;
-  min-height: 500px;
+  height: 500px;
   background-color: #f8f8ff;
   padding: 25px;
   margin: 30px;
   border-radius: 26px;
+  overflow-y: scroll;
+}
+
+/* // toda la barra de desplazamiento. */
+.contenedorPrincipal::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.contenedorPrincipal::-webkit-scrollbar:vertical{
+    width: 8px;
+}
+
+/* // el controlador de desplazamiento arrastrable. */
+.contenedorPrincipal::-webkit-scrollbar-thumb
+{
+    background-color: #F3E9DF;
+    border-radius: 20px;
+}
+
+/* // la pista (barra de progreso) de la barra de desplazamiento, donde hay una barra gris encima de una barra blanca. */
+.contenedorPrincipal::-webkit-scrollbar-track {
+    border-radius: 10px;
 }
 
 .footer{
